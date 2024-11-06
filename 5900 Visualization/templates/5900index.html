@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group A - Data 404</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='5900style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="{{ url_for('static', filename='images/logo-ryder.svg') }}" alt="Ryder Logo" class="logo">
+            <h1>Group A - Data 404</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form-control">
+            <label for="month-select">Please select a month:</label>
+            <select id="month-select">
+                <option value="">Please choose a month you want to predict</option>
+                <optgroup label="2024">
+                    <option value="2024-01">January 2024</option>
+                    <option value="2024-02">February 2024</option>
+                    <option value="2024-03">March 2024</option>
+                    <option value="2024-04">April 2024</option>
+                    <option value="2024-05">May 2024</option>
+                    <option value="2024-06">June 2024</option>
+                    <option value="2024-07">July 2024</option>
+                    <option value="2024-08">August 2024</option>
+                    <option value="2024-09">September 2024</option>
+                    <option value="2024-10">October 2024</option>
+                    <option value="2024-11">November 2024</option>
+                    <option value="2024-12">December 2024</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="method-select">Please select a method:</label>
+            <select id="method-select">
+                <option value="">Please pick a method</option>
+                <option value="method1">Method 1</option>
+                <option value="method2">Method 2</option>
+            </select>
+        </div>
+        <button id="predict-btn">Predict</button>
+        <div id="result-container"></div> 
+    </main>
+    <script src="{{ url_for('static', filename='5900script.js') }}"></script>
+</body>
+</html>
